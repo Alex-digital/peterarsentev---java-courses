@@ -24,8 +24,8 @@ public class CalculatorTest {
 	@Test()
 	public void div() throws UserException {
 		Calculator calculator = new Calculator();
-		calculator.div(1, 1);
-		assertEquals(1, calculator.getResult());
+		calculator.div(100, 5);
+		assertEquals(20, calculator.getResult());
 	}
 
 	@Test(expected = IllegalArgumentException.class)
